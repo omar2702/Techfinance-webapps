@@ -24,6 +24,7 @@
               "src/assets"
             ],
             "styles": [
+              "src/custom-theme.scss",
               "src/styles.css"
             ],
             "scripts": []
@@ -120,5 +121,8 @@
       }
     }
   },
-  "defaultProject": "Techfinance-webapps"
+  "defaultProject": "Techfinance-webapps",
+  "cli": {
+    "analytics": "92b64856-902f-4830-83fa-9308c49e1d48"
+  }
 }
