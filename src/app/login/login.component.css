@@ -1,0 +1,31 @@
+.login{
+  margin-left: 30vw;
+  margin-top: 10vw;
+  width: 500px;
+  height: 300px;
+}
+
+.Email{
+  width: 520px;
+}
+.Password{
+  width: 520px;
+}
+
+.logo{
+  margin-left: 200px;
+  width: 100px;
+  height: 100px;
+}
+
+.boton{
+  margin-top: 0.1vw;
+}
+
+
+.grid-container{
+  display: grid;
+  background-image: url("https://apcweb.com.ar/wp-content/uploads/2018/12/bg4.jpg");
+  max-width: 1500px;
+  height: 610px;
+}

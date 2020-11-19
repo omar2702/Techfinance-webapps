@@ -1,0 +1,36 @@
+<div class="grid-container">
+  <mat-card class="login">
+    <img class="logo" src="assets/Logo_Fi.jpg" alt="">
+    <mat-form-field appearance="legacy" class="Email">
+      <mat-label>Enter your Mail</mat-label>
+      <label>
+        <input type="email" matInput [formControl]="emailFormControl" [errorStateMatcher]="matcher">
+      </label>
+      <mat-hint>Errors appear instantly!</mat-hint>
+      <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
+        Please enter a valid email address
+      </mat-error>
+      <mat-error *ngIf="emailFormControl.hasError('required')">
+        Mail is <strong>required</strong>
+      </mat-error>
+    </mat-form-field>
+    <br>
+    <mat-form-field appearance="legacy" class="Password">
+      <mat-label>Enter your password</mat-label>
+      <label>
+        <input type="email" matInput [formControl]="emailFormControl" [errorStateMatcher]="matcher">
+      </label>
+      <mat-hint>Errors appear instantly!</mat-hint>
+      <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
+        Please enter a valid password address
+      </mat-error>
+      <mat-error *ngIf="emailFormControl.hasError('required')">
+        Password is <strong>required</strong>
+      </mat-error>
+    </mat-form-field>
+    <div class="Register">
+      <a mat-button target="_blank">Register</a>
+    </div>
+    <button mat-raised-button color="white" class="boton">Login</button>
+  </mat-card>
+</div>
