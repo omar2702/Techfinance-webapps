@@ -1,0 +1,33 @@
+<div class="Dashboard">
+  <mat-toolbar>
+    <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+      <span class="material-icons">menu</span>
+    </button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item>
+        <label>Add Client</label>
+        <span class="material-icons"> add person </span>
+      </button>
+      <button mat-menu-item>
+        <label>See Clients</label>
+        <span class="material-icons"> list </span>
+      </button>
+    </mat-menu>
+    <span>Bodega S.A.C.</span>
+    <span class="example-spacer"></span>
+
+    <div class="user">
+      <mat-label align="right">User</mat-label>
+      <button class="profile" mat-button>Profile
+        <span class="material-icons">
+          perm_identity
+        </span>
+      </button>
+      <button class="profile" mat-button>Log Out
+        <span class="material-icons">
+          exit_to_app
+        </span>
+      </button>
+    </div>
+  </mat-toolbar>
+</div>
