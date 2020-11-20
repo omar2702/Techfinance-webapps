@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app/app.component';
 import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {RouterModule} from '@angular/router';
@@ -13,15 +14,17 @@ import {MatCardModule} from '@angular/material/card';
 import {MatButtonModule} from '@angular/material/button';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
-import { DashboardGrocerComponent } from './dashboard-grocer/dashboard-grocer.component';
+import { DashboardGrocerComponent} from './dashboard-grocer/dashboard-grocer.component';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatMenuModule} from '@angular/material/menu';
 import {MatOptionModule} from '@angular/material/core';
 
+// @ts-ignore
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
+    RegisterComponent,
     DashboardGrocerComponent
   ],
   imports: [
@@ -39,7 +42,7 @@ import {MatOptionModule} from '@angular/material/core';
     MatOptionModule
   ],
   providers: [],
-  bootstrap: [DashboardGrocerComponent],
+  bootstrap: [RegisterComponent],
   exports: [
     FormsModule,
     MatIconModule,

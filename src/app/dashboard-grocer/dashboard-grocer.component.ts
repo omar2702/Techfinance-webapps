@@ -1,10 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import {FormBuilder, FormControl, FormGroup, Validators} from '@angular/forms';
+
 @Component({
   selector: 'app-dashboard-grocer',
   templateUrl: './dashboard-grocer.component.html',
   styleUrls: ['./dashboard-grocer.component.css']
 })
+
 export class DashboardGrocerComponent implements OnInit {
   options: FormGroup;
   colorControl = new FormControl('primary');
