@@ -1,0 +1,131 @@
+<div class="grid-container2">
+  <mat-card class="register">
+    <img class="logo" src="assets/Logo_Fi.jpg" alt="">
+    <br>
+    <mat-form-field appearance="legacy" class="Email">
+      <mat-label>Enter your Mail</mat-label>
+      <label>
+        <input type="email" matInput [formControl]="emailFormControl" [errorStateMatcher]="matcher">
+      </label>
+      <mat-hint>Errors appear instantly!</mat-hint>
+      <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
+        Please enter a valid email address
+      </mat-error>
+      <mat-error *ngIf="emailFormControl.hasError('required')">
+        Mail is <strong>required</strong>
+      </mat-error>
+    </mat-form-field>
+    <mat-form-field appearance="legacy" class="DNI">
+      <mat-label>Enter your DNI</mat-label>
+      <label>
+        <input type="email" matInput [formControl]="dniFormControl" [errorStateMatcher]="matcher">
+      </label>
+      <mat-hint>Errors appear instantly!</mat-hint>
+      <mat-error *ngIf="dniFormControl.hasError('email') && !dniFormControl.hasError('required')">
+        Please enter a valid DNI address
+      </mat-error>
+      <mat-error *ngIf="dniFormControl.hasError('required')">
+        DNI is <strong>required</strong>
+      </mat-error>
+    </mat-form-field>
+    <br>
+    <mat-form-field appearance="legacy" class="Name">
+      <mat-label>Enter your Name</mat-label>
+      <label>
+        <input matInput [formControl]="nameFormControl" [errorStateMatcher]="matcher">
+      </label>
+      <mat-hint>Errors appear instantly!</mat-hint>
+      <mat-error *ngIf="nameFormControl.hasError('name') && !nameFormControl.hasError('required')">
+        Please enter a you Name
+      </mat-error>
+      <mat-error *ngIf="nameFormControl.hasError('required')">
+        Name is <strong>required</strong>
+      </mat-error>
+    </mat-form-field>
+    <mat-form-field appearance="legacy" class="Lastname">
+      <mat-label>Enter your Lastname</mat-label>
+      <label>
+        <input matInput [formControl]="lastnameFormControl" [errorStateMatcher]="matcher">
+      </label>
+      <mat-hint>Errors appear instantly!</mat-hint>
+      <mat-error *ngIf="lastnameFormControl.hasError('Lastname') && !lastnameFormControl.hasError('required')">
+        Please enter a you Name
+      </mat-error>
+      <mat-error *ngIf="lastnameFormControl.hasError('required')">
+        Name is <strong>required</strong>
+      </mat-error>
+    </mat-form-field>
+    <br>
+    <mat-form-field appearance="legacy" class="Company">
+      <mat-label>Enter your Company</mat-label>
+      <label>
+        <input matInput [formControl]="companyFormControl" [errorStateMatcher]="matcher">
+      </label>
+      <mat-hint>Errors appear instantly!</mat-hint>
+      <mat-error *ngIf="companyFormControl.hasError('company') && !companyFormControl.hasError('required')">
+        Please enter a you company
+      </mat-error>
+      <mat-error *ngIf="companyFormControl.hasError('required')">
+        Company is <strong>required</strong>
+      </mat-error>
+    </mat-form-field>
+    <mat-form-field appearance="legacy" class="RUC">
+      <mat-label>Enter your RUC</mat-label>
+      <label>
+        <input matInput [formControl]="rucFormControl" [errorStateMatcher]="matcher">
+      </label>
+      <mat-hint>Errors appear instantly!</mat-hint>
+      <mat-error *ngIf="rucFormControl.hasError('ruc') && !rucFormControl.hasError('required')">
+        Please enter a you RUC
+      </mat-error>
+      <mat-error *ngIf="rucFormControl.hasError('required')">
+        RUC is <strong>required</strong>
+      </mat-error>
+    </mat-form-field>
+    <br>
+    <mat-form-field appearance="legacy" class="Address">
+      <mat-label>Enter your Address</mat-label>
+      <label>
+        <input matInput [formControl]="addressFormControl" [errorStateMatcher]="matcher">
+      </label>
+      <mat-hint>Errors appear instantly!</mat-hint>
+      <mat-error *ngIf="addressFormControl.hasError('address') && !addressFormControl.hasError('required')">
+        Please enter a you Address
+      </mat-error>
+      <mat-error *ngIf="addressFormControl.hasError('required')">
+        Address is <strong>required</strong>
+      </mat-error>
+    </mat-form-field>
+    <br>
+    <mat-form-field appearance="legacy" class="Password">
+      <mat-label>Enter your Password</mat-label>
+      <label>
+        <input type="password" matInput [formControl]="passwordFormControl" [errorStateMatcher]="matcher">
+      </label>
+      <mat-hint>Errors appear instantly!</mat-hint>
+      <mat-error *ngIf="passwordFormControl.hasError('password') && !passwordFormControl.hasError('required')">
+        Please enter a valid password address
+      </mat-error>
+      <mat-error *ngIf="passwordFormControl.hasError('required')">
+        Password is <strong>required</strong>
+      </mat-error>
+    </mat-form-field>
+    <mat-form-field appearance="legacy" class="Confirm Password">
+      <mat-label>Repeat your Password </mat-label>
+      <label>
+        <input type="password" matInput [formControl]="confirmPasswordFormControl" [errorStateMatcher]="matcher">
+      </label>
+      <mat-hint>Errors appear instantly!</mat-hint>
+      <mat-error *ngIf="confirmPasswordFormControl.hasError('password') && !confirmPasswordFormControl.hasError('required')">
+        Please enter you password again
+      </mat-error>
+      <mat-error *ngIf="confirmPasswordFormControl.hasError('required')">
+        Password is <strong>required</strong>
+      </mat-error>
+    </mat-form-field>
+    <div class="Account">
+      <a mat-button target="_blank">I have account</a>
+    </div>
+    <button mat-raised-button color="white" class="boton">Register</button>
+  </mat-card>
+</div>
