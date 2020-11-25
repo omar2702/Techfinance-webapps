@@ -18,6 +18,9 @@ import { DashboardGrocerComponent} from './dashboard-grocer/dashboard-grocer.com
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatMenuModule} from '@angular/material/menu';
 import {MatOptionModule} from '@angular/material/core';
+import { VisualClientsComponent } from './visual-clients/visual-clients.component';
+import {MatTableModule} from '@angular/material/table';
+import {MatSortModule} from '@angular/material/sort';
 
 // @ts-ignore
 @NgModule({
@@ -25,7 +28,8 @@ import {MatOptionModule} from '@angular/material/core';
     AppComponent,
     LoginComponent,
     RegisterComponent,
-    DashboardGrocerComponent
+    DashboardGrocerComponent,
+    VisualClientsComponent
   ],
   imports: [
     BrowserModule,
@@ -39,10 +43,12 @@ import {MatOptionModule} from '@angular/material/core';
     MatToolbarModule,
     MatSidenavModule,
     MatMenuModule,
-    MatOptionModule
+    MatOptionModule,
+    MatTableModule,
+    MatSortModule
   ],
   providers: [],
-  bootstrap: [RegisterComponent],
+  bootstrap: [DashboardGrocerComponent],
   exports: [
     FormsModule,
     MatIconModule,
